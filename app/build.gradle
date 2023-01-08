@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.angletool'
+    namespace 'com.davimatyi.angletool'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.angletool"
+        applicationId "com.davimatyi.angletool"
         minSdk 24
         targetSdk 33
         versionCode 1
