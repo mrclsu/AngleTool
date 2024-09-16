@@ -1,4 +1,4 @@
-package com.davimatyi.angletool
+package com.davimatyi.angletool.viewmodels
 
 import android.app.Application
 import android.content.Context.SENSOR_SERVICE
@@ -7,6 +7,7 @@ import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
 import android.hardware.SensorManager
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.AndroidViewModel
@@ -21,8 +22,8 @@ class AngleViewModel(
 
     var isLocked by mutableStateOf(false)
         private set
-    var currentAngle by mutableStateOf(0)
-    private var baseAngle by mutableStateOf(0)
+    var currentAngle by mutableIntStateOf(0)
+    private var baseAngle by mutableIntStateOf(0)
     var angleText by mutableStateOf("0")
         private set
 
